@@ -1,0 +1,353 @@
+:root {
+  --color-primary: #fbb905;
+  --color-secondary: #02b4f0;
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1,
+h2,
+h5 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: calc(100% + 2.3vw + 2.3vh);
+}
+
+h2 {
+  font-size: calc(100% + 1.3vw + 1.3vh);
+  margin-bottom: 20px;
+}
+h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.btn-on,
+.btn-off {
+  border-radius: 20px;
+  background: var(--color-primary);
+  color: white;
+  width: 200px;
+}
+
+.btn-on:hover {
+  background: #efb20c;
+  color: white;
+}
+.btn-off {
+  background: none;
+  width: 150px;
+}
+
+.btn-off:hover {
+  background: var(--color-primary);
+}
+
+.btn-center {
+  margin: 0 auto;
+}
+
+#header {
+  background: var(--color-secondary) !important;
+}
+#header img {
+  width: 180px;
+}
+
+.navbar .collapse a {
+  color: white !important;
+  opacity: 0.8;
+}
+
+.navbar .collapse a:hover {
+  opacity: 10;
+}
+
+#main {
+  background: var(--color-secondary);
+  color: white;
+  padding: 15px;
+}
+
+#main img {
+  width: 450px;
+}
+
+.card {
+  margin: 0 auto;
+}
+
+.cards-section {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.cards-section .card {
+  border: none;
+}
+
+.cards-section .card-img {
+  background: var(--color-primary);
+  border-radius: 100%;
+  width: auto;
+}
+
+.cards-section .card-img .card-img-top {
+  width: 80px;
+  height: 80px;
+  padding: 20px 20px;
+}
+
+.cards-section .card .card-color-2 {
+  background: #e650c8;
+}
+
+.cards-section .card .card-color-3 {
+  background: #21d17c;
+}
+
+.sobre-nosotros .sobre-nosotros-container {
+  display: grid;
+  column-gap: 45px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'title-about img-about'
+    'text-about img-about'
+    'button-about img-about ';
+  align-items: center;
+}
+
+.sobre-nosotros .title-about {
+  grid-area: title-about;
+}
+
+.sobre-nosotros .img-about {
+  grid-area: img-about;
+}
+
+.sobre-nosotros .text-about {
+  grid-area: text-about;
+}
+
+.sobre-nosotros {
+  margin-bottom: 50px;
+}
+
+.proyecto-educativo {
+  margin-bottom: 50px;
+}
+
+.proyecto-educativo .proyecto-educativo-container {
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: 400px 1fr;
+  grid-template-areas:
+    'img-project title-project'
+    'img-project text-project'
+    'img-project button-project ';
+  align-items: center;
+}
+
+.proyecto-educativo .title-project {
+  grid-area: title-project;
+}
+
+.proyecto-educativo .img-project {
+  grid-area: img-project;
+}
+
+.proyecto-educativo .text-project {
+  grid-area: text-project;
+}
+
+.proyecto-educativo .button-project {
+  grid-area: button-project;
+}
+
+.proyecto-educativo .text-project img {
+  width: 3vw;
+  margin-right: 20px;
+}
+
+.proyecto-educativo .text-project .clases-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5em;
+  row-gap: 20px;
+}
+
+.proyecto-educativo .clases-container .clases {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.nuestro-equipo {
+  margin-bottom: 50px;
+}
+
+.nuestro-equipo .card {
+  border: none;
+}
+
+.nuestro-equipo .card img {
+  border-radius: 50%;
+}
+
+.testimonios-section {
+  background-image: url('img/testimonio-bg.jfif');
+  background-attachment: fixed;
+}
+
+.testimonios img {
+  width: 50px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.contactanos {
+  color: white;
+  background-image: url('img/contactanos.jfif');
+}
+
+.testimonios .card .card-text {
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.testimonios .card .perfil-testimonio {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.testimonios .card .perfil-testimonio img {
+  border-radius: 50%;
+  margin: 0 20px;
+}
+
+.cards-final .card .card-color-1 {
+  background: var(--color-secondary);
+}
+
+.footer .footer-number {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer hr {
+  width: 50px;
+  background: var(--color-primary);
+  height: 1px;
+  margin: 16px 0;
+}
+
+.footer .footer-down {
+  background: var(--color-primary);
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .cards-main .card {
+    width: 14em !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #main img {
+    width: 320px;
+  }
+
+  #main h1 {
+    font-size: 2.5em;
+  }
+
+  #main .container {
+    text-align: center;
+  }
+  .sobre-nosotros .sobre-nosotros-container {
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'title-about title-about'
+      'img-about img-about'
+      'text-about text-about'
+      'button-about button-about';
+  }
+  .cards-main .card {
+    width: 16em !important;
+  }
+  .proyecto-educativo .proyecto-educativo-container {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'title-project title-project'
+      'img-project img-project'
+      'text-project text-project '
+      'button-project button-project';
+  }
+
+  .proyecto-educativo .text-project img {
+    width: 40px;
+    margin-right: 20px;
+  }
+
+  .proyecto-educativo .text-project .clases-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .proyecto-educativo .text-project .clases-container {
+    margin-top: 20px;
+  }
+
+  .footer .ubicacion {
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nuestro-equipo .card .card-img-top {
+    width: 200px;
+    align-self: center;
+  }
+  .proyecto-educativo .proyecto-educativo-container {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'title-project title-project'
+      'img-project img-project'
+      'text-project text-project '
+      'button-project button-project';
+  }
+
+  .proyecto-educativo .text-project img {
+    width: 40px;
+    margin-right: 20px;
+  }
+
+  .proyecto-educativo .text-project .clases-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .footer .footer-number {
+    justify-content: flex-start;
+  }
+
+  .footer-redes .redes {
+    text-align: start;
+  }
+}
