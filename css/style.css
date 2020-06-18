@@ -201,34 +201,52 @@ h5 {
 }
 
 .testimonios-section {
-  background-image: url('img/testimonio-bg.jfif');
+  background-image: url('../img/testimonio-bg.jfif');
   background-attachment: fixed;
 }
 
-.testimonios img {
+.testimonios-section .owl-carousel .card img {
   width: 50px;
   margin-top: 20px;
   margin-left: 20px;
 }
 
-.contactanos {
-  color: white;
-  background-image: url('img/contactanos.jfif');
-}
-
-.testimonios .card .card-text {
+.testimonios-section .owl-carousel .card-text {
   border-bottom: 2px solid var(--color-primary);
-}
-
-.testimonios .card .perfil-testimonio {
-  display: flex;
-  align-items: center;
   padding-bottom: 20px;
 }
 
-.testimonios .card .perfil-testimonio img {
+.testimonios-section .owl-carousel .card-perfil img {
   border-radius: 50%;
-  margin: 0 20px;
+  margin: 0 20px 0 0;
+}
+
+.testimonios-section .owl-carousel .card-perfil {
+  display: flex;
+  align-items: center;
+}
+
+.testimonios-section .owl-carousel .owl-dots {
+  text-align: center;
+}
+
+.testimonios-section .owl-carousel .owl-dot {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 50%;
+  margin: 20px 5px 0;
+}
+
+.testimonios-section .owl-carousel .owl-dot.active {
+  background-color: var(--color-primary);
+}
+
+.contactanos {
+  color: white;
+  background-image: url('../img/contactanos.jfif');
 }
 
 .cards-final .card .card-color-1 {
